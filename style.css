@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.logo i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+time {
+  font-weight: bold;
+}
+
+nav {
+  border-top: 2px solid #c4c4c4;
+  border-bottom: 2px solid #c4c4c4;
+  margin: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.col:not(:last-child) {
+  border-right: 2px solid #c4c4c4;
+}
+
+main p {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+main h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col:not(:last-child) {
+    border-right: none;
+  }
+}
+/* FOOTER STYLES */
+
+/* footer is separated from main by 11.4rem */
+footer {
+  margin-top: 11.4rem;
+  padding-bottom: 2.4rem;
+}
+
+/* footer paragraph font styles */
+#footer-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+/* creator anchor styles */
+#creator {
+  font-weight: 700;
+  border-bottom: 1px solid #bdbdbd;
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+/* MEDIA STYLES */
+
+@media screen and (min-width: 1280px) {
+  /* main on desktop has margin-top of 10rem instead of 6.4rem 
+    and has padding of 7.7rem on the sides */
+  main {
+    margin-top: 10rem;
+    padding: 0 7.7rem;
+  }
+
+  /* main container on desktop has flex direction row instead of column 
+    gap between img-container and text-container is 11.8rem */
+  .main-container {
+    flex-direction: row;
+    gap: 11.8rem;
+  }
+
+  /* scarecrow on desktop has width of 54rem instead of 28.6rem */
+  #scarecrow {
+    width: 54rem;
+  }
+
+  /* text container has no margin or padding on desktop */
+  .text-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* back to homepage button has hover effect on desktop
+    slightly changes color and cursor is set to pointer while hovering */
+  #back-to-homepage:hover {
+    background-color: #4f4f4f;
+    cursor: pointer;
+  }
+}
